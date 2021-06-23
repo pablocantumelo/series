@@ -1,0 +1,66 @@
+form {
+    margin: 30px;
+}
+
+form label {
+    display: inline;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.genero-submit {
+    background: #20c997;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+}
+
+.genero-submit:hover {
+    font-weight: bolder;
+    color: blue;
+    background: #00a293;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divForm{
+    background-color: gray;
+}
+
+table {
+    margin: 30px;
+    text-align: center;
+}
+
+thead {
+    background: #20c997;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px  15px;
+}
+
+.list-button {
+    background: #20c997;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+}
+
+.editar-button {
+    background: darkseagreen;
+}
+
+.apagar-button {
+    background: mediumslateblue;
+}
