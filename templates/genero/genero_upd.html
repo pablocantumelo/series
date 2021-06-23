@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SERIES</title>
+    <link href="{% static 'css/menu.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/crud.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    {% include '../menu.html' %}
+    <main>
+        <div class="conteiner">
+            <div class="divForm">
+                <form onsubmit="/genero" id="form-genero" method="post">
+                    {{form}}
+                    {% csrf_token %}
+                    <input type="submit" id="genero-submit" class='genero-submit' value="Alterar"/>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
