@@ -26,11 +26,14 @@ def delete(request, id):
     except:
         return HttpResponseNotAllowed();
 
+
+
 def update(request, id):
     item = models.Serie.objects.get(id=id);
     if request.method == "GET":
         form = forms.SerieForm(initial={'nome': item.nome, 'idGenero': item.idGenero})
         data_dict = {'form': form}
+
         return render(request, 'serie/serie_upd.html', data_dict)
     else:
         form = forms.SerieForm(request.POST)
