@@ -25,9 +25,6 @@ def delete(request, id):
         return render(request, 'serie/serie.html', data_dict)
     except:
         return HttpResponseNotAllowed();
-
-
-
 def update(request, id):
     item = models.Serie.objects.get(id=id);
     if request.method == "GET":
